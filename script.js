@@ -37,29 +37,28 @@ function playGame() {
                 (humanChoise == "paper" & computerChoise == "rock") ||
                 (humanChoise == "scissors" & computerChoise == "paper")){
                     scoreHuman += 1;
-                    console.log(`You won! ${humanChoise} beats ${computerChoise}! `)               
+                    console.log(`Computer chose ${computerChoise}. You won! ${humanChoise} beats ${computerChoise}! `)               
                 }
         else {
             scoreComputer += 1;
-            console.log(`You lost! ${computerChoise} beats ${humanChoise}!`);
+            console.log(`Computer chose ${computerChoise}. You lost! ${computerChoise} beats ${humanChoise}!`);
         }
 
     }
     for(let i = 1; i <= 5; i++){
         humanChoise = getHumanChoise();
         computerChoise = getComputerChoise();
-        console.log(`${humanChoise}, ${computerChoise}`)
         playRound(humanChoise, computerChoise);
     }
-    console.log(`Human score: ${scoreHuman}, computer score: ${scoreComputer}`)
+    
     if (scoreHuman > scoreComputer){
-        console.log("You won!");
+        console.log(`You won! It's ${scoreHuman} - ${scoreComputer}.`);
     }
     else if (scoreHuman < scoreComputer){
-        console.log("You lost!");
+        console.log(`You lost! It's ${scoreHuman} - ${scoreComputer}.`);
     }
     else {
-        console.log("It's a tie!");
+        console.log(`It's a tie! ${scoreHuman} - ${scoreComputer}.`);
     }
 
 }
