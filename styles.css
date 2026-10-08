@@ -1,0 +1,92 @@
+html, body {
+    height:100%;
+    margin:0;
+    padding-top: 20px;
+}
+body {
+    background-color: #5ACBE2;
+    display:flex;
+    gap: 50px;
+    min-height: 100vh;
+   
+}
+.left, .right, .scores, .result {
+    border: 3px solid black;
+}
+button {
+    height:20%;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    background-color:#ffef00;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right:50px;
+
+}
+.left {
+    margin: 20px;
+    width:50%;
+    display: flex;
+    gap: 20px;
+    background-color:#E5347E;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.right {
+    color: black;
+    font-size: 30px;;
+    width:50%;
+    display: flex;
+    margin:20px;
+    background-color:#E2715A;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:20px;
+}
+.result {
+    background-color: #9370DB;
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#result-title {
+    font-weight: 700;
+}
+.scores {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #CBE25A;
+}
+.boxes {
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    border-radius:5px;
+
+    
+}
+.box {
+    font-weight: 700;
+    padding:15px;
+    background-color:  #715AE2;
+    color:khaki;
+    border: 3px solid #CBE25A;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+}
+.player {
+    border-bottom: 5px solid black;
+    border-radius:2px;
+}
